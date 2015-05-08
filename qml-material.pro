@@ -1,4 +1,8 @@
 TEMPLATE = subdirs
-SUBDIRS = modules/Material modules/QtQuick/Controls/Styles/Material tests
+SUBDIRS = \
+    tests \
+    modules/Material \
+    modules/Material/ListItems \
+    modules/QtQuick/Controls/Styles/Material/materialstyles.pro
 
 OTHER_FILES = README.md CHANGELOG.md

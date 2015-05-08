@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/Material/ListItems">
+        <file alias="BaseListItem.qml">BaseListItem.qml</file>
+        <file alias="Divider.qml">Divider.qml</file>
+        <file alias="SectionHeader.qml">SectionHeader.qml</file>
+        <file alias="SimpleMenu.qml">SimpleMenu.qml</file>
+        <file alias="Standard.qml">Standard.qml</file>
+        <file alias="Subheader.qml">Subheader.qml</file>
+        <file alias="Subtitled.qml">Subtitled.qml</file>
+    </qresource>
+</RCC>

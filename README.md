@@ -23,8 +23,8 @@ From the root of the repository, run:
 
     $ qmake
     $ make
-    $ make check # Optional, make sure everything is working correctly
     $ sudo make install
+    $ make check # Optional, make sure everything is working correctly
 
 Now check out the `demo` folder to see how to use Material Design from QtQuick!
 

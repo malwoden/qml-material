@@ -52,6 +52,5 @@
         <file>Wave.qml</file>
         <file>Window.qml</file>
         <file>awesome.js</file>
-        <file>qmldir</file>
     </qresource>
 </RCC>

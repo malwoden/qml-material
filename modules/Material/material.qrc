@@ -30,6 +30,7 @@
         <file>PageSidebar.qml</file>
         <file>PageStack.qml</file>
         <file>Palette.qml</file>
+        <file>Popover.qml</file>
         <file>PopupBase.qml</file>
         <file>ProgressBar.qml</file>
         <file>ProgressCircle.qml</file>
@@ -42,6 +43,8 @@
         <file>Tabs.qml</file>
         <file>TabView.qml</file>
         <file>TextField.qml</file>
+        <file>TimePicker.qml</file>
+        <file>TimePickerDialog.qml</file>
         <file>Theme.qml</file>
         <file>ThemePalette.qml</file>
         <file>ThinDivider.qml</file>

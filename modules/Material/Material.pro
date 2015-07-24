@@ -13,8 +13,8 @@ SOURCES += \
 
 RESOURCES += \
     $$PWD/material.qrc \
-    $$PWD/fonts/fonts.qrc \
-    $$PWD/icons/icons.qrc
+    $$PWD/fonts.qrc \
+    $$PWD/icons.qrc
 
 QML_FILES += \
     $$PWD/Action.qml \
@@ -47,6 +47,7 @@ QML_FILES += \
     $$PWD/PageSidebar.qml \
     $$PWD/PageStack.qml \
     $$PWD/Palette.qml \
+    $$PWD/Popover.qml \
     $$PWD/PopupBase.qml \
     $$PWD/ProgressBar.qml \
     $$PWD/ProgressCircle.qml \
@@ -59,6 +60,8 @@ QML_FILES += \
     $$PWD/TabView.qml \
     $$PWD/Tabs.qml \
     $$PWD/TextField.qml \
+    $$PWD/TimePicker.qml \
+    $$PWD/TimePickerDialog.qml \
     $$PWD/Theme.qml \
     $$PWD/ThinDivider.qml \
     $$PWD/Toolbar.qml \

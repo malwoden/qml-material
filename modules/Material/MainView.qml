@@ -43,32 +43,32 @@ Item {
     OverlayLayer {
         id: dialogOverlayLayer
         objectName: "dialogOverlayLayer"
+        z: 100
     }
 
     OverlayLayer {
         id: tooltipOverlayLayer
         objectName: "tooltipOverlayLayer"
+        z: 100
     }
 
     OverlayLayer {
         id: overlayLayer
+        z: 100
     }
 
     width: Units.dp(800)
     height: Units.dp(600)
 
     Component.onCompleted: {
-        if (clientSideDecorations)
-            flags |= Qt.FramelessWindowHint
-
-        Units.pixelDensity = Qt.binding(function() { 
+        Units.pixelDensity = Qt.binding(function() {
             return Screen.pixelDensity
         });
 
         Device.type = Qt.binding(function () {
-            var diagonal = Math.sqrt(Math.pow((Screen.width/Screen.pixelDensity), 2) + 
+            var diagonal = Math.sqrt(Math.pow((Screen.width/Screen.pixelDensity), 2) +
                     Math.pow((Screen.height/Screen.pixelDensity), 2)) * 0.039370;
-            
+
             if (diagonal >= 3.5 && diagonal < 5) { //iPhone 1st generation to phablet
                 Units.multiplier = 1;
                 return Device.phone;

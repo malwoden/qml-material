@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/Material">
+        <file>awesome.js</file>
         <file>Action.qml</file>
         <file>ActionBar.qml</file>
         <file>ActionButton.qml</file>
@@ -11,6 +12,7 @@
         <file>Button.qml</file>
         <file>Card.qml</file>
         <file>CheckBox.qml</file>
+        <file>DatePicker.qml</file>
         <file>Device.qml</file>
         <file>Dialog.qml</file>
         <file>Dropdown.qml</file>
@@ -40,20 +42,20 @@
         <file>Slider.qml</file>
         <file>Snackbar.qml</file>
         <file>Switch.qml</file>
-        <file>Tabs.qml</file>
-        <file>TabView.qml</file>
+        <file>Tab.qml</file>
+        <file>TabBar.qml</file>
+        <file>TabbedPage.qml</file>
         <file>TextField.qml</file>
-        <file>TimePicker.qml</file>
-        <file>TimePickerDialog.qml</file>
         <file>Theme.qml</file>
         <file>ThemePalette.qml</file>
         <file>ThinDivider.qml</file>
+        <file>TimePicker.qml</file>
+        <file>TimePickerDialog.qml</file>
         <file>Toolbar.qml</file>
         <file>Tooltip.qml</file>
         <file>Units.qml</file>
         <file>View.qml</file>
         <file>Wave.qml</file>
         <file>Window.qml</file>
-        <file>awesome.js</file>
     </qresource>
 </RCC>

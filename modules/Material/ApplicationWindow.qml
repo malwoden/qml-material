@@ -19,6 +19,7 @@ import QtQuick 2.0
 import QtQuick.Controls 1.2 as Controls
 import QtQuick.Window 2.0
 import Material 0.1
+import Material.Extras 0.1
 
 /*!
    \qmltype ApplicationWindow
@@ -97,7 +98,7 @@ Controls.ApplicationWindow {
         }
 
         onPushed: __toolbar.push(page)
-        onPopped: __toolbar.pop()
+        onPopped: __toolbar.pop(page)
         onReplaced: __toolbar.replace(page)
     }
 
@@ -123,18 +124,60 @@ Controls.ApplicationWindow {
     width: Units.dp(800)
     height: Units.dp(600)
 
+    Dialog {
+        id: errorDialog
+
+        property var promise
+
+        positiveButtonText: "Retry"
+
+        onAccepted: {
+            promise.resolve()
+            promise = null
+        }
+
+        onRejected: {
+            promise.reject()
+            promise = null
+        }
+    }
+
+    /*!
+       Show an error in a dialog, with the specified secondary button text (defaulting to "Close")
+       and an optional retry button.
+
+       Returns a promise which will be resolved if the user taps retry and rejected if the user
+       cancels the dialog.
+     */
+    function showError(title, text, secondaryButtonText, retry) {
+        if (errorDialog.promise) {
+            errorDialog.promise.reject()
+            errorDialog.promise = null
+        }
+
+        errorDialog.negativeButtonText = secondaryButtonText ? secondaryButtonText : "Close"
+        errorDialog.positiveButton.visible = retry || false
+
+        errorDialog.promise = new Promises.Promise()
+        errorDialog.title = title
+        errorDialog.text = text
+        errorDialog.open()
+
+        return errorDialog.promise
+    }
+
     Component.onCompleted: {
         if (clientSideDecorations)
             flags |= Qt.FramelessWindowHint
 
-        Units.pixelDensity = Qt.binding(function() { 
+        Units.pixelDensity = Qt.binding(function() {
             return Screen.pixelDensity
         });
 
         Device.type = Qt.binding(function () {
-            var diagonal = Math.sqrt(Math.pow((Screen.width/Screen.pixelDensity), 2) + 
+            var diagonal = Math.sqrt(Math.pow((Screen.width/Screen.pixelDensity), 2) +
                     Math.pow((Screen.height/Screen.pixelDensity), 2)) * 0.039370;
-            
+
             if (diagonal >= 3.5 && diagonal < 5) { //iPhone 1st generation to phablet
                 Units.multiplier = 1;
                 return Device.phone;

@@ -1,0 +1,9 @@
+module Material.Extras
+plugin materialextras
+classname ExtrasPlugin
+typeinfo plugins.qmltypes
+DateUtils 0.1 qrc:/Material/Extras/js/dateutils.js
+Http 0.1 qrc:/Material/Extras/js/httplib.js
+ListUtils 0.1 qrc:/Material/Extras/js/listutils.js
+Promises 0.1 qrc:/Material/Extras/js/promises.js
+Utils 0.1 qrc:/Material/Extras/js/utils.js

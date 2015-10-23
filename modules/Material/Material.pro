@@ -23,11 +23,12 @@ QML_FILES += \
     $$PWD/ApplicationWindow.qml \
     $$PWD/AppTheme.qml \
     $$PWD/AwesomeIcon.qml \
-    $$PWD/Button.qml \
     $$PWD/BottomActionSheet.qml \
     $$PWD/BottomSheet.qml \
+    $$PWD/Button.qml \
     $$PWD/Card.qml \
     $$PWD/CheckBox.qml \
+    $$PWD/DatePicker.qml \
     $$PWD/Device.qml \
     $$PWD/Dialog.qml \
     $$PWD/Dropdown.qml \
@@ -47,25 +48,28 @@ QML_FILES += \
     $$PWD/PageSidebar.qml \
     $$PWD/PageStack.qml \
     $$PWD/Palette.qml \
+    $$PWD/plugins.qml \
     $$PWD/Popover.qml \
     $$PWD/PopupBase.qml \
     $$PWD/ProgressBar.qml \
     $$PWD/ProgressCircle.qml \
     $$PWD/RadioButton.qml \
-    $$PWD/Sidebar.qml \
     $$PWD/Scrollbar.qml \
+    $$PWD/Sidebar.qml \
     $$PWD/Slider.qml \
     $$PWD/Snackbar.qml \
     $$PWD/Switch.qml \
-    $$PWD/TabView.qml \
-    $$PWD/Tabs.qml \
+    $$PWD/Tab.qml \
+    $$PWD/TabBar.qml \
+    $$PWD/TabbedPage.qml \
     $$PWD/TextField.qml \
+    $$PWD/Theme.qml \
+    $$PWD/ThemePalette.qml \
+    $$PWD/ThinDivider.qml \
     $$PWD/TimePicker.qml \
     $$PWD/TimePickerDialog.qml \
-    $$PWD/Theme.qml \
-    $$PWD/ThinDivider.qml \
     $$PWD/Toolbar.qml \
-    $$PWD/ToolTip.qml \
+    $$PWD/Tooltip.qml \
     $$PWD/Units.qml \
     $$PWD/View.qml \
     $$PWD/Wave.qml \

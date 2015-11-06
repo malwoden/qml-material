@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/Material/Extras">
+        <file alias="AutomaticGrid.qml">AutomaticGrid.qml</file>
+        <file alias="CircleImage.qml">CircleImage.qml</file>
+        <file alias="CircleMask.qml">CircleMask.qml</file>
+        <file alias="ColumnFlow.qml">ColumnFlow.qml</file>
+        <file alias="Document.qml">Document.qml</file>
+        <file alias="Image.qml">Image.qml</file>
+        <file alias="Object.qml">Object.qml</file>
+        <file alias="images/circle.png">images/circle.png</file>
+        <file alias="js/dateutils.js">js/dateutils.js</file>
+        <file alias="js/httplib.js">js/httplib.js</file>
+        <file alias="js/listutils.js">js/listutils.js</file>
+        <file alias="js/promises.js">js/promises.js</file>
+        <file alias="js/utils.js">js/utils.js</file>
+    </qresource>
+</RCC>

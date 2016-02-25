@@ -1,3 +1,4 @@
+include($$TOP_SRCDIR/build_setup.pri)
 TEMPLATE = lib
 CONFIG += plugin
 QT += qml quick

@@ -1,0 +1,14 @@
+# Generate .pdb files in release mode in order to analyse crash reports:
+win32-msvc* {
+    QMAKE_CFLAGS_RELEASE += -Zi
+    QMAKE_CXXFLAGS_RELEASE += -Zi
+    QMAKE_LFLAGS_RELEASE += /DEBUG /OPT:REF
+}
+
+macx {
+    # Generate debug symbols on mac that can be extracted using dsymutil
+    QMAKE_CFLAGS_RELEASE = $$QMAKE_CFLAGS_RELEASE_WITH_DEBUGINFO
+    QMAKE_CXXFLAGS_RELEASE = $$QMAKE_CXXFLAGS_RELEASE_WITH_DEBUGINFO
+    QMAKE_OBJECTIVE_CFLAGS_RELEASE =  $$QMAKE_OBJECTIVE_CFLAGS_RELEASE_WITH_DEBUGINFO
+    QMAKE_LFLAGS_RELEASE = $$QMAKE_LFLAGS_RELEASE_WITH_DEBUGINFO
+}
